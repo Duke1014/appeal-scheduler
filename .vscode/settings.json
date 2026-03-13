@@ -1,0 +1,20 @@
+{
+  "python.defaultInterpreterPath": "/home/duke/.pyenv/versions/3.8.13/bin/python",
+  "python.analysis.extraPaths": [
+    "/home/duke/.pyenv/versions/3.8.13/lib/python3.8/site-packages"
+  ],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}
