@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from app.api.routes import auth, users, events, assignments, surveys
+from app.api.routes import auth, users, shows, assignments, surveys
 from app.core.config import settings
 from app.db.database import engine
 from app.db import models
@@ -29,7 +29,7 @@ app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 # Routers
 app.include_router(auth.router,        prefix="/api/auth",        tags=["Auth"])
 app.include_router(users.router,       prefix="/api/users",       tags=["Users"])
-app.include_router(events.router,      prefix="/api/events",      tags=["Events"])
+app.include_router(shows.router,       prefix="/api/shows",       tags=["Shows"])
 app.include_router(assignments.router, prefix="/api/assignments", tags=["Assignments"])
 app.include_router(surveys.router,     prefix="/api/surveys",     tags=["Surveys"])
 
